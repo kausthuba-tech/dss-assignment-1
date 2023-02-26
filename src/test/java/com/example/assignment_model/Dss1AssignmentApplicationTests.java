@@ -34,7 +34,7 @@ class Dss1AssignmentApplicationTests {
 		baseUrl = "http://localhost:" + 9001 + "/audioApi/";
 	}
 
-//    @Test
+        @Test
 	public void testConcurrentRequests() {
 		int numClients = 50; // total number of clients
 		int numGets = 5; // number of clients sending GET requests
@@ -80,7 +80,7 @@ class Dss1AssignmentApplicationTests {
 		}
 	}
 
-//    @Test
+        @Test
 	public void testGetAllAudioItems() {
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
@@ -91,7 +91,7 @@ class Dss1AssignmentApplicationTests {
 		System.out.println("Response for all audio items: " + response.getBody());
 	}
 
-//    @Test
+        @Test
 	public void testCreateAudioItem() {
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
